@@ -104,6 +104,7 @@ jobs:
       # Valor literal (não é segredo): banco separado para o CI não
       # poluir os dados reais.
       MONGO_DB: ci_tests
+      MONGO_PRED_COLLECTION: predictions
     steps:
       - name: Checkout do código
         uses: actions/checkout@v4
